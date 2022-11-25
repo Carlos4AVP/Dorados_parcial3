@@ -14,35 +14,30 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>Registrar producto</h1><hr>
+                <h1>Crea una cuenta</h1><hr>
                 <form method="post" action="guardarDatos.php">
                     <div class="form-group">
                         <label for="">Nombre:</label>
-                        <input type="text" class="form-control" name="nombre" placeholder="Teclea el nombre">
+                        <input type="text" class="form-control" name="nombre" placeholder="Nombre">
                     </div>
 
                     <div class="form-group">
-                        <label for="">Precio:</label>
-                        <input type="number" class="form-control" name="precio" placeholder="Inserta su precio">
+                        <label for="">Apellido:</label>
+                        <input type="text" class="form-control" name="apellido" placeholder="Apellido">
                     </div>
 
                     <div class="form-group">
-                        <label for="">Marca:</label>
-                        <input type="text" class="form-control" name="marca" placeholder="Escribe la marca del producto">
+                        <label for="">Correo electrónico:</label>
+                        <input type="text" class="form-control" name="correo" placeholder="Correo electrónico">
                     </div>
 
                     <div class="form-group">
-                        <label for="">Oferta:</label>
-                        <input type="radio" name="oferta" class="form-control" value="1">Sí</input>
-                        <input type="radio" name="oferta" class="form-control" value="0">No</input>
+                        <label for="">Contraseña:</label>
+                        <input type="text" name="contrasena" class="form-control" placeholder="Min. 8 caracteres">
                     </div>
 
-                    <div class="form-group">
-                        <label for="">Código del producto:</label>
-                        <input type="number" class="form-control" name="codigo">
-                    </div>
                     <div>
-                        <input type="submit" class="btn btn-primary" value="Registrar">
+                        <input type="submit" class="btn btn-primary" value="Crear cuenta">
                         <a href="consultarDatos.php" class="btn btn-danger">Cancelar</a>
                     </div>
                 </form>

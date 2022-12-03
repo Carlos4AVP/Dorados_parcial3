@@ -3,15 +3,15 @@
     include 'conexion.php';
 
     $nombre = $_POST["nombre"];
-    $precio = $_POST["precio"];
-    $marca = $_POST["marca"];
-    $oferta = $_POST["oferta"];
-    $codigo = $_POST["codigo"];
+    $apellido = $_POST["apellido"];
+    $correo = $_POST["correo"];
+    $contrasena = $_POST["contrasena"];
 
-    $sql = "INSERT INTO registrar (nombre, precio, marca, oferta, codigo)". 
-    "VALUES ('".$nombre."',' ".$precio."', '".$marca."', '".$oferta."', '".$codigo."')";
+    $sql = "INSERT INTO usuarios (nombre, apellido, correo, contrasena)". 
+    "VALUES ('".$nombre."',' ".$apellido."', '".$correo."', '".$contrasena."')";
 
-    if($conexion->query($sql) === TRUE){
+    if($conexion->query($sql) === TRUE)
+    {
         echo "Registro guardado con Éxito <a href='consultarDatos.php'>Regresar</a>";
     } else {
         echo "Error: ".$sql."<br>".$conexion->error."<br><br><a href='consultarDatos.php'>Regresar</a>";

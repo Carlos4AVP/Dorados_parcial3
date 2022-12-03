@@ -13,7 +13,7 @@
     <?php
       include 'conexion.php';
       $sql = "select * from registrar";
-      $datos = $conexion->query($sql);
+      $datos = $conexion->query($sql); 
 
     ?>
 
@@ -27,9 +27,9 @@
                         <tr>
                             <th>ID</th>
                             <th>Nombre</th>
+                            <th>Categoría</th>
                             <th>Precio</th>
-                            <th>Marca</th>
-                            <th>Oferta</th>
+                            <th>Descuento</th>
                             <th>Código</th>
                             <th>Opciones</th>
                         </tr>
@@ -41,9 +41,9 @@
                         <tr>
                             <td><?php echo $row["id"]; ?></td>
                             <td><?php echo $row["nombre"]; ?></td>
+                            <td><?php echo $row["categoria"]; ?></td>
                             <td><?php echo $row["precio"]; ?></td>
-                            <td><?php echo $row["marca"]; ?></td>
-                            <td><?php echo $row["oferta"]; ?></td>
+                            <td><?php echo $row["descuento"]; ?></td>
                             <td><?php echo $row["codigo"]; ?></td>
                             <td>
                                 <a href="actualizarRegistro.php?id=<?php echo $row["id"]; ?>" class="btn btn-primary">Editar</a>

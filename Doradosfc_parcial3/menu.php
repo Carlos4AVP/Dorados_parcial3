@@ -4,12 +4,12 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="font-weight-bolder text-warning">Afición Dorados</div>
+        <div class="font-weight-bolder text-warning"><h1>Afición Dorados</h1></div>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.php"><h4>Inicio</h4> <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="registrarDatos.php">Registar</a>
@@ -23,7 +23,7 @@
                   <img src="img/user.png" alt="Cuenta" height=50px width=50px>
               </a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Iniciar Sesión</a>
+                <a class="dropdown-item" href="InciarSecion.php">Iniciar Sesión</a>
                 <a class="dropdown-item" href="registrarDatos.php">Regístrate</a>
         </div>
     </nav>

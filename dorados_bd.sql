@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 02-12-2022 a las 03:06:52
--- Versión del servidor: 10.1.39-MariaDB
--- Versión de PHP: 7.3.5
+-- Tiempo de generación: 04-12-2022 a las 01:07:47
+-- Versión del servidor: 10.4.24-MariaDB
+-- Versión de PHP: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -39,6 +38,26 @@ CREATE TABLE `articulos_tienda` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `inicio_sesion`
+--
+
+CREATE TABLE `inicio_sesion` (
+  `id` int(11) NOT NULL,
+  `correo` varchar(100) NOT NULL,
+  `contrasena` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `inicio_sesion`
+--
+
+INSERT INTO `inicio_sesion` (`id`, `correo`, `contrasena`) VALUES
+(1, 'sergio.perez@cetis107.edu.mx', '12345'),
+(2, 'sergio.perez@cetis107.edu.mx', '12345');
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `usuarios`
 --
 
@@ -47,8 +66,22 @@ CREATE TABLE `usuarios` (
   `nombre` varchar(100) NOT NULL,
   `apellido` varchar(100) NOT NULL,
   `correo` varchar(200) NOT NULL,
-  `contrasena` int(11) NOT NULL
+  `contrasena` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `nombre`, `apellido`, `correo`, `contrasena`) VALUES
+(1, 'Sergio Guillermo ', ' Perez Perez', 'sergio.perez@cetis107.edu.mx', '12345'),
+(2, 'Carlos Fernando', ' Angulo Lopez', 'carlos.angulo@cetis107.edu.mx', '23456'),
+(9, 'Alexander', ' Palazuelos Beltran', 'AlexanderPro@gmail.com', 'SoyBUENISIMO'),
+(10, 'Daniel', ' Guiterrez', 'ninorata@gmail.com', 'Maincraft32'),
+(16, 'Sergio Guillermo ', ' Perez Perez', 'sergio.perez@cetis107.edu.mx', '12345'),
+(17, 'Sergio Guillermo ', ' Perez Perez', 'sergio.perez@cetis107.edu.mx', '12345'),
+(18, 'Sergio Guillermo ', ' Perez Perez', 'sergio.perez@cetis107.edu.mx', '12345'),
+(19, 'Alexander', ' Palazuelos Beltran', 'AlexanderPro@gmail.com', 'SoyBUENISIMO');
 
 --
 -- Índices para tablas volcadas
@@ -58,6 +91,12 @@ CREATE TABLE `usuarios` (
 -- Indices de la tabla `articulos_tienda`
 --
 ALTER TABLE `articulos_tienda`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `inicio_sesion`
+--
+ALTER TABLE `inicio_sesion`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -77,10 +116,26 @@ ALTER TABLE `articulos_tienda`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT de la tabla `inicio_sesion`
+--
+ALTER TABLE `inicio_sesion`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+
+--
+-- Restricciones para tablas volcadas
+--
+
+--
+-- Filtros para la tabla `inicio_sesion`
+--
+ALTER TABLE `inicio_sesion`
+  ADD CONSTRAINT `inicio_sesion_ibfk_1` FOREIGN KEY (`id`) REFERENCES `usuarios` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

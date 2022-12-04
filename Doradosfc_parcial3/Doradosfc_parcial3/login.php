@@ -16,7 +16,7 @@
             <div class="col-12">
                 <div class="font-italic"><br><h1><b>Inicia sesión</b></h1><hr></div>
 
-                <form method="post" action="validar.php">
+                <form method="post" action="guardarDatosSesion.php">
 
                     <div class="form-group">
                         <label for="">Correo electrónico:</label><br>
@@ -30,7 +30,8 @@
 
                     <div>
                         <input type="submit" class="btn btn-warning" value="Acceder">
-                    </div>
+                        <a href="consultarDatos.php" class="btn btn-danger">Cancelar</a>
+                    </div> 
                     <p>
                         <br>
                         <br>
@@ -44,7 +45,7 @@
         <hr>
         <img src="img/footer1.png" alt="Dorados Sinaloa" width="248px" height="219px">
         <img src="img/footer2.png" alt="Hazla de pez" width="330px" height="157px"><br>
-        2022 &copy; Cetis107 Desarrollo Web<br><br>
+        2022 &copy; Dorados de Sinaloa<br><br>
     </footer>
     <script src="js/bootstrap.js"></script>
 </body>

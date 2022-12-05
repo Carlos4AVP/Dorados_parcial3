@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-12-2022 a las 01:07:47
--- Versión del servidor: 10.4.24-MariaDB
--- Versión de PHP: 8.1.6
+-- Tiempo de generación: 05-12-2022 a las 08:00:36
+-- Versión del servidor: 10.1.38-MariaDB
+-- Versión de PHP: 7.3.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -30,10 +31,19 @@ SET time_zone = "+00:00";
 CREATE TABLE `articulos_tienda` (
   `id` int(11) NOT NULL,
   `nombre` varchar(100) NOT NULL,
+  `categoria` varchar(30) NOT NULL,
   `codigo_producto` int(11) NOT NULL,
-  `precio` int(11) NOT NULL,
-  `descuento` tinyint(1) NOT NULL
+  `precio` float NOT NULL,
+  `descuento` tinyint(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `articulos_tienda`
+--
+
+INSERT INTO `articulos_tienda` (`id`, `nombre`, `categoria`, `codigo_producto`, `precio`, `descuento`) VALUES
+(28673, 'JERSEY CHARLY DORADOS BLANCO HOMBRE', 'Hombre', 6947, 300, 70),
+(78056, 'DORADOS GORRA 47B AUDIBLE MVP LOGO', 'Gorras', 23581, 329.4, 40);
 
 -- --------------------------------------------------------
 
@@ -52,8 +62,7 @@ CREATE TABLE `inicio_sesion` (
 --
 
 INSERT INTO `inicio_sesion` (`id`, `correo`, `contrasena`) VALUES
-(1, 'sergio.perez@cetis107.edu.mx', '12345'),
-(2, 'sergio.perez@cetis107.edu.mx', '12345');
+(1, 'sergio.perez@cetis107.edu.mx', '12345678');
 
 -- --------------------------------------------------------
 
@@ -77,11 +86,7 @@ INSERT INTO `usuarios` (`id`, `nombre`, `apellido`, `correo`, `contrasena`) VALU
 (1, 'Sergio Guillermo ', ' Perez Perez', 'sergio.perez@cetis107.edu.mx', '12345'),
 (2, 'Carlos Fernando', ' Angulo Lopez', 'carlos.angulo@cetis107.edu.mx', '23456'),
 (9, 'Alexander', ' Palazuelos Beltran', 'AlexanderPro@gmail.com', 'SoyBUENISIMO'),
-(10, 'Daniel', ' Guiterrez', 'ninorata@gmail.com', 'Maincraft32'),
-(16, 'Sergio Guillermo ', ' Perez Perez', 'sergio.perez@cetis107.edu.mx', '12345'),
-(17, 'Sergio Guillermo ', ' Perez Perez', 'sergio.perez@cetis107.edu.mx', '12345'),
-(18, 'Sergio Guillermo ', ' Perez Perez', 'sergio.perez@cetis107.edu.mx', '12345'),
-(19, 'Alexander', ' Palazuelos Beltran', 'AlexanderPro@gmail.com', 'SoyBUENISIMO');
+(10, 'Daniel', ' Guiterrez', 'ninorata@gmail.com', 'Maincraft32');
 
 --
 -- Índices para tablas volcadas
@@ -113,7 +118,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `articulos_tienda`
 --
 ALTER TABLE `articulos_tienda`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78057;
 
 --
 -- AUTO_INCREMENT de la tabla `inicio_sesion`

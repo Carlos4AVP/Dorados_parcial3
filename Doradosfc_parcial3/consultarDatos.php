@@ -12,8 +12,8 @@
 
     <?php
       include 'conexion.php';
-      $sql = "select * from registrar";
-      $datos = $conexion->query($sql); 
+      $sql = "select * from articulos_tienda";
+      $datos = $conexion->query($sql);
 
     ?>
 
@@ -42,9 +42,9 @@
                             <td><?php echo $row["id"]; ?></td>
                             <td><?php echo $row["nombre"]; ?></td>
                             <td><?php echo $row["categoria"]; ?></td>
+                            <td><?php echo $row["codigo_producto"]; ?></td>
                             <td><?php echo $row["precio"]; ?></td>
                             <td><?php echo $row["descuento"]; ?></td>
-                            <td><?php echo $row["codigo"]; ?></td>
                             <td>
                                 <a href="actualizarRegistro.php?id=<?php echo $row["id"]; ?>" class="btn btn-primary">Editar</a>
                                 <a href="eliminarRegistro.php?id=<?php echo $row["id"]; ?>" class="btn btn-danger">Eliminar</a>

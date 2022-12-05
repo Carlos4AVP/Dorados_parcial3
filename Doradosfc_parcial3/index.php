@@ -14,7 +14,10 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="jumbotron">
+                <div class="jumbotron bg-white">
+
+                	<!-- Sección de noticias -->
+
                     <h1 class="display-4 font-bolder"><b>Noticias</b></h1>
                 <div class="row">
         	<div class="col-sm-3">
@@ -33,7 +36,47 @@
            	<div class="card bg-dark" style="width: 17rem;">
         	<img src="img/noticia2.jpg" class="card-img-top" alt="..." width="300px" height="225px"> 
         	<p class="lead">
-        		<h5>En el último minuto Dorados vence al Deportivo Tala</h5>
+        		<h5>En el último minuto Dorados vence al Deportivo Tala<br><br></h5>
+        	</p>
+            </a>
+        	</div>
+        	</div>
+
+        	<div class="col-sm-3">
+            <a href="#"  class="text-white  ">
+           	<div class="card bg-dark" style="width: 17rem;">
+        	<img src="img/noticia3.jpg" class="card-img-top" alt="..." width="300px" height="225px"> 
+        	<p class="lead">
+        		<h5>Dorados de Sinaloa enfrentan a Mineros de Zacatecas<br><br></h5>
+        	</p>
+            </a>
+        	</div>
+        	</div>
+
+                </div>
+                    <hr class="my-4">
+
+                    <!-- Sección de ofertas-->
+
+                    <h1 class="display-4 font-bolder"><b>Ofertas</b></h1>
+           <div class="row">
+        	<div class="col-sm-3">
+            <a href="#"  class="text-white  ">
+           	<div class="card bg-dark" style="width: 17rem;">
+        	<img src="img/oferta1.png" class="card-img-top" alt="..." width="300px" height="225px"> 
+        	<p class="lead">
+        		<h5>JERSEY CHARLY DORADOS BLANCO HOMBRE</h5>
+        	</p>
+            </a>
+        	</div>
+        	</div>
+
+        	<div class="col-sm-3">
+            <a href="#"  class="text-white  ">
+           	<div class="card bg-dark" style="width: 17rem;">
+        	<img src="img/oferta2.png" class="card-img-top" alt="..." width="300px" height="225px"> 
+        	<p class="lead">
+        		<h5>DORADOS GORRA 47B AUDIBLE MVP LOGO</h5>
         	</p>
             </a>
         	</div>
@@ -42,9 +85,49 @@
         	<div class="col-sm-3">
             <a href="#"  class="text-white  ">
            	<div class="card bg-dark" style="width: 17rem;">
+        	<img src="img/oferta3.png" class="card-img-top" alt="..." width="300px" height="225px"> 
+        	<p class="lead">
+        		<h5>JERSEY CHARLY DORADOS GRIS NINO</h5>
+        	</p>
+            </a>
+        	</div>
+        	</div>
+
+                </div>
+                <hr class="my-4">
+
+                <!--Próximos partidos-->
+
+                    <h1 class="display-4 font-bolder"><b>Próximos partidos</b></h1>
+                <div class="row">
+        	<div class="col-sm-3">
+            <a href="#"  class="text-white  ">
+           	<div class="card bg-dark" style="width: 17rem;">
+        	<img src="img/noticia1.jpg" class="card-img-top" alt="..." width="300px" height="225px"> 
+        	<p class="lead">
+        		<h5>Dorados abrirá en casa contra los Correcaminos en el Torneo 2023</h5>
+        	</p>
+            </a>
+        	</div>
+        	</div>
+
+        	<div class="col-sm-3">
+            <a href="#"  class="text-white  ">
+           	<div class="card bg-dark" style="width: 17rem;">
+        	<img src="img/noticia2.jpg" class="card-img-top" alt="..." width="300px" height="225px"> 
+        	<p class="lead">
+        		<h5>En el último minuto Dorados vence al Deportivo Tala<br><br></h5>
+        	</p>
+            </a>
+        	</div>
+        	</div>
+
+        	<div class="col-sm-3">
+            <a href="#"  class="text-white  ">
+           	<div class="card bg-dark" style="width: 17rem;">
         	<img src="img/noticia3.jpg" class="card-img-top" alt="..." width="300px" height="225px"> 
         	<p class="lead">
-        		<h5>Dorados de Sinaloa enfrentan a Mineros de Zacatecas</h5>
+        		<h5>Dorados de Sinaloa enfrentan a Mineros de Zacatecas<br><br></h5>
         	</p>
             </a>
         	</div>
@@ -52,10 +135,9 @@
 
                 </div>
                     <hr class="my-4">
-                    <p>Esta práctica pertenece al parcial #3</p>
-                  </div>
-                  
-                  
+
+
+                </div>           
             </div>
         </div>
     </div>

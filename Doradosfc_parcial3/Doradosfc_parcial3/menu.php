@@ -12,11 +12,14 @@
               <a class="nav-link" href="index.php"><b>Inicio</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="registrarDatos.php"><b>Tienda</b></a>
+              <a class="nav-link" href="ConsultarDatos.php"><b>Artículos</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Historia.php"><b>Historia</b></a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0" method="GET" action="resultadoBusqueda.php">
-            <input name="termino" class="form-control mr-sm-2" type="search" placeholder="Buscar" style="width: 500px; height:40px;" aria-label="Buscar">
+            <input name="termino" class="form-control mr-sm-2" type="search" placeholder="Buscar" style="width: 400px; height:40px;" aria-label="Buscar">
           </form>
           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
@@ -24,6 +27,6 @@
               </a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="login.php">Iniciar Sesión</a>
-                <a class="dropdown-item" href="registrarDatos.php">Regístrate</a>
+                <a class="dropdown-item" href="registrarCuenta.php">Regístrate</a>
         </div>
     </nav>

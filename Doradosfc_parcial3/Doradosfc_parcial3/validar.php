@@ -14,7 +14,9 @@ $filas=mysqli_num_rows($resultado);
 if($filas){
     header("location:homep.php");
 
-}else{
+}
+	else
+{
     ?>
     <?php
     include("index.php");
